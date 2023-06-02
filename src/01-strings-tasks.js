@@ -104,8 +104,9 @@ function getFirstChar(value) {
  *   'cat'              => 'cat'
  *   '\tHello, World! ' => 'Hello, World!'
  */
-function removeLeadingAndTrailingWhitespaces(/* value */) {
-  throw new Error('Not implemented');
+function removeLeadingAndTrailingWhitespaces(value) {
+  const str = value.trim();
+  return str;
 }
 
 /**
@@ -119,8 +120,14 @@ function removeLeadingAndTrailingWhitespaces(/* value */) {
  *   'A', 5  => 'AAAAA'
  *   'cat', 3 => 'catcatcat'
  */
-function repeatString(/* value, count */) {
-  throw new Error('Not implemented');
+function repeatString(value, count) {
+  const arr = [];
+  for (let i = 0; i < count; i += 1) {
+    const elem = value;
+    arr.push(elem);
+  }
+  const str = arr.join('');
+  return str;
 }
 
 /**
